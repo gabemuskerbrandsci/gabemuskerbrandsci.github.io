@@ -435,7 +435,7 @@ input, select, textarea {
 		outline: 0;
 		padding: 0 1rem;
 		text-decoration: none;
-		width: 100%;
+		width: 80%;
 	}
 
 		input[type="text"]:invalid,
@@ -1661,11 +1661,6 @@ input, select, textarea {
 
 		}
 
-		input {
-			background-color: #ffffff;
-			color: #1b1f22;
-			width: 60%
-		}
 
 		.img-column {
 			box-sizing: border-box;

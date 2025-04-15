@@ -58,51 +58,28 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 			<!-- Outputs -->
 			<article id="outputs">
 				<h2 class="major">Please Enter You Email <br />Address for Access</h2>
-				<form name="forms" id="forms">
+				<form 
+				onsubmit="myFunction()"
+				target="_blank"
+				action="https://prod-35.uksouth.logic.azure.com:443/workflows/aafeafecdb5c49d3a4167339b1ed158a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7oVUOyKvM8YQ2ax3K8gWeBD-DO0mtXzBi7ymziPYIQM" 
+				method = "POST"
+				name="forms" 
+				id="forms">
 					<div>
-						<input name="emailAddress" id="emailAddress" />
+						<input type="email" name="emailAddress" id="emailAddress" required/>
 					</div>
-					<br />
+					<br>
 					<div>
-						<button type="submit">Email Reports</button>
+						<button type="submit" id="btn-submit">Get My Reports</button>
 					</div>
 				</form>
 
-				<script>
-					// get the form element from dom
-					const formElement = document.querySelector('form#forms')
-
-					// convert the form to JSON
-					const getFormJSON = (form) => {
-						const data = new FormData(form);
-						return Array.from(data.keys()).reduce((result, key) => {
-							result[key] = data.get(key);
-							return result;
-						}, {});
-					};
-
-					// handle the form submission event, prevent default form behaviour, check validity, convert form to JSON
-					const handler = (event) => {
-						event.preventDefault();
-						const valid = formElement.reportValidity();
-						if (valid) {
-							const result = getFormJSON(formElement);
-							console.log(result)
-							fetch('https://prod-51.uksouth.logic.azure.com:443/workflows/65872fa250734444a0335aff43788a42/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=0GQDsJydLZUidDJWCwcfpuS2AYNm1LMKYcei_Uvf94U', {
-								method: 'POST',
-								headers: {
-									'Accept': 'application/json',
-									'Content-Type': 'application/json'
-								},
-								body: JSON.stringify(result)
-							})
-								.then(response => response.json())
-								.then(response => console.log(JSON.stringify(response)))
-						}
-					}
-
-					formElement.addEventListener("submit", handler)
+				<script> function myFunction() {
+     				alert("Thank you! You should receive the email in your inbox shortly."); 
+					window.location.href = 'outputs.html';
+					} 
 				</script>
+
 			</article>
 
 			<!-- Elements -->
