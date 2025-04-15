@@ -1661,10 +1661,16 @@ input, select, textarea {
 
 		}
 
+		input {
+			background-color: #ffffff;
+			color: #1b1f22;
+			width: 60%
+		}
+
 		.img-column {
 			box-sizing: border-box;
-			float: left;
-			width: 33.33%;
+			display: inline-block;
+			width: 30%;
 			padding: 5px;
 		  }
 		  
@@ -1680,7 +1686,7 @@ input, select, textarea {
 		  @media screen and (max-width: 500px) {
 			.img-column {
 				box-sizing: border-box;
-			  	width: 100%;
+			    width: 100%;
 			}
 		  }
 
