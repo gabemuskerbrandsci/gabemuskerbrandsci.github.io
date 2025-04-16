@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* Custom Styles for metAInsights website */
+
+/* FONTS */
+a { transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; outline: none; color: #00000a; text-decoration: none;}
+a:hover { text-decoration:none; color: #f49313;}
+a:focus { outline: none;}
+
+/* SPACING CLASSES */
+.pad30 { padding: 30px;}
+.pad60 { padding: 60px;}
+.pad90 { padding: 90px;}
+.pad120 { padding: 120px;}
+.padX30 { padding: 0 30px;}
+.padX60 { padding: 0 60px;}
+.padX90 { padding: 0 90px;}
+.padX120 { padding: 0 120px;}
+.padY30 { padding: 30px 0;}
+.padY60 { padding: 60px 0;}
+.padY90 { padding: 90px 0;}
+.padY120 { padding: 120px 0;}
+.padY200 { padding: 200px 0;}
+
+/* HEADINGS & TEXT */
+h1,h2,h3,h4,h5,h6 { font-family: urw-din, sans-serif; font-weight: 600; margin: 0 0 1rem 0; color: #090913;}
+p { font-size: 1.1rem; margin: 0 0 1rem 0;}
+
+/* GENERAL */
+html, body { overflow-x: hidden;}
+body { font-family: runda, sans-serif; font-weight: 400; font-style: normal; color: #00000a;}
+
+header { background: url("../images/header-bg.jpg") 0 0 no-repeat; background-size: cover;}
+header .links { font-size: 0.9rem; line-height: 1rem; color: #00000a;}
+header .links .fa-solid { margin-right: 4px;}
+header .links a { color: #00000a;}
+header .links a:hover { color: #8298ad;}
+header #intro-outer { filter: drop-shadow(0 0 8px rgba(70,91,116,0.25)); margin-bottom: 50px;}
+header #intro { background: linear-gradient(-55deg,transparent 35px,#8298ad 0); clip-path: polygon(0 0,100% 0,100% calc(100% - 60px),calc(100% - 60px) 100%,0 100%); color: #fff; padding: 50px 40px;}
+header #intro h1 { font-size: 2.2rem; line-height: 3.4rem; margin: 0; font-family: urw-din, sans-serif; font-weight: 300; color: #fff;}
+header #intro h1 strong { font-weight: 600;}
+
+.box-outer { filter: drop-shadow(0 0 8px rgba(70,91,116,0.25)); margin-bottom: 50px;}
+.box-outer.top { margin-top: 100px;}
+.box { background: linear-gradient(-55deg,transparent 35px,#fff 0); clip-path: polygon(0 0,100% 0,100% calc(100% - 60px),calc(100% - 60px) 100%,0 100%); color: #00000a; padding: 50px 40px;}
+.box ul { list-style: none; padding: 0; margin: 0 0 1rem 0;}
+.box ul li { font-size: 1.1rem; margin-bottom: 5px;}
+.box .fa-circle-plus { color: #f49313; margin-right: 10px;}
+.box .fa-circle-minus { color: #8298ad; margin-right: 10px;}
+
+#what { background-color: #fdc477; background-size: contain, contain; background-image: url("../images/what-we-do-bg.jpg"), url("../images/bottom-bg.jpg"); background-position: 0 0, bottom center; background-repeat: no-repeat, no-repeat; padding-bottom: 500px;}
+.hexagons { padding-bottom: 160px; position: relative; margin-bottom: 30px;}
+.hexagons .title { position: absolute; top: 30px; left: 50%; transform: translateX(-50%); width: 300px; text-transform: uppercase; font-family: urw-din, sans-serif; font-weight: 600; text-align: center; font-size: 1.8rem;}
+.hexagon-outer { filter: drop-shadow(0 0 8px rgba(70,91,116,0.25)); display: inline-block;}
+.hexagon-outer.left { position: relative; left: 55px;}
+.hexagon-outer.middle { position: relative; top: 160px;}
+.hexagon-outer.right { position: relative; right: 55px;}
+.hexagon { height: 290px; aspect-ratio: 1/cos(30deg); clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%); background: #fff; position: relative;}
+.hexagon.blue { background: #47a3ee; color: #fff;}
+.hexagon.orange { background: #f49313; color: #fff;}
+.hexagon .text { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: urw-din, sans-serif; font-weight: 600; text-align: center; font-size: 1.6rem; width: 70%;}
+
+footer { background: url('../images/footer-bg.jpg') top right no-repeat; background-size: cover;}
+#copyright { background-color: #8298ad; color: #fff;}
+#copyright ul { list-style: none; padding: 0; margin: 0;}
+#copyright ul li { display: inline-block; padding: 0 15px; border-right: 1px solid #fff; line-height: 0.7rem;}
+#copyright ul li:last-child { padding: 0 0 0 15px; border-right: none;}
+#copyright ul li a { color: #fff;}
+#copyright ul li a:hover { color: #333;}
+
+/* NAVIGATION */
+.navbar { margin: 0; padding: 0; font-family: urw-din, sans-serif; font-weight: 600; font-style: normal;}
+.navbar-brand { margin: 0; padding: 0;}
+.nav-item { margin-left: 40px;}
+.nav-item .nav-link { text-transform: uppercase; font-size: 1.2rem; padding: 0 0 5px 0 !important; color: #00000a;}
+.nav-item .nav-link:hover { color: #8298ad;}
+
+/* BUTTONS */
+.btn { border-radius: 0; text-transform: uppercase; padding: 15px 30px; transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; font-family: urw-din, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 1.1rem;}
+.btn-primary { background-color: #f49313; border-color: #f49313;}
+.btn-primary:hover { background-color: #8298ad; border-color: #8298ad;}
+
+/* RESPONSIVE AMENDED STYLES */
+/* #Laptop
+================================================== */
+/* Note: Design for a width of 1080px */
+@media only screen and (min-width: 1081px) and (max-width: 1280px) {
+	header .padY200 { padding-top: 100px;}
+	header .links, header .links a, .nav-item .nav-link { color: #00000a;}
+	#what { background-image: url("../images/what-we-do-bg-lg.jpg"), url("../images/bottom-bg-xl.jpg");}
+	footer { background: url('../images/footer-bg-xl.jpg') top right no-repeat; padding: 30px 0 !important;}
+}
+/* #Tablet (Landscape)
+================================================== */
+/* Note: Design for a width of 1080px */
+@media only screen and (min-width: 960px) and (max-width: 1080px) {
+	header { background: url("../images/header-bg-lg.jpg") 0 0 no-repeat; background-size: cover;}
+	header .links, header .links a { color: #00000a;}
+	header .padY200 { padding-top: 100px;}
+	header #intro h1 { font-size: 1.6rem; line-height: 2.8rem;}
+	.nav-item .nav-link { font-size: 1.1rem; color: #00000a;}
+	#what { background-image: url("../images/what-we-do-bg-lg.jpg"), url("../images/bottom-bg-xl.jpg"); padding: 60px 0 260px 0 !important;}
+	.box { padding: 20px;}
+	.hexagons .title { font-size: 1.6rem;}
+	.hexagon-outer.left { position: absolute; left: 30px;}
+	.hexagon-outer.middle { position: relative; top: 160px;}
+	.hexagon-outer.right { position: absolute; right: 30px;}
+	footer { background: url('../images/footer-bg-xl.jpg') top right no-repeat; padding: 30px 0 !important; background-size: contain;}
+	footer p { font-size: 1rem;}
+	#logo { padding: 30px 0;}
+}
+
+/* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	header { background-image: url("../images/header-bg-md.jpg"), url("../images/header-bg-md-b.jpg"); background-position: 0 0, bottom left; background-repeat: no-repeat, no-repeat; background-size: contain; padding: 30px 0 !important;}
+	header .padY200 { padding-top: 100px;}
+	header #intro h1 { font-size: 1.6rem; line-height: 2.8rem;}
+	header .links, header .links a, .nav-item .nav-link { color: #00000a;}
+	#what { background-image: url("../images/what-we-do-bg-md.jpg"), url("../images/bottom-bg-xl.jpg"); padding: 60px 0 260px 0 !important;}
+	.box { padding: 0 20px 20px 20px;}
+	.box ul li { font-size: 0.9rem;}
+	.hexagons .title { font-size: 1.4rem; top: 10px;}
+	.hexagon-outer.left { position: absolute; left: 10px;}
+	.hexagon-outer.middle { position: relative; top: 140px;}
+	.hexagon-outer.right { position: absolute; right: 10px;}
+	.hexagon { height: 230px;}
+	.hexagon .text { font-size: 1.3rem;}
+	footer { background: none;}
+	#copyright, #copyright .text-end { text-align: center !important;}
+}
+
+/* #Mobile Menu
+================================================== */
+/* Note: */
+@media only screen and (max-width: 959px) {
+	header { background-color: rgba(255,255,255,0.75); background-blend-mode: lighten;}
+	.navbar-toggler { border: 0; margin: 0; padding: 0;}
+	.navbar-toggler:focus { box-shadow: none;}
+	.navbar-collapse { background-color: rgba(255,255,255,0.95); padding: 15px; margin-top: 15px; box-shadow: 0 0 8px rgba(70,91,116,0.25);}
+	.nav-item { margin-left: 0px;}
+	.nav-item .nav-link { font-size: 1.1rem; text-align: center; color: #00000a;}
+	#logo { padding: 30px 0;}
+}
+
+/* #Mobile (Both)
+================================================== */
+/* Note: Landscape and portrait */
+@media only screen and (max-width: 767px) {
+	header { background-image: url("../images/header-bg-sm.jpg"), url("../images/header-bg-md-b.jpg"); background-position: top right, bottom left; background-repeat: no-repeat, no-repeat; background-size: contain; padding: 30px 0 !important;}
+	header .links { padding-bottom: 15px;}
+	header .links .text-end { text-align: center !important;}
+	header .links, header .links a, .nav-item .nav-link { color: #00000a;}
+	header .padY200 { padding-top: 50px;}
+	header #intro { padding: 30px;}
+	header #intro h1 { font-size: 1.3rem; line-height: 2rem;}
+	#what { background-image: url("../images/what-we-do-bg-sm.jpg"), url("../images/bottom-bg-xl.jpg"); background-size: contain, contain; padding: 60px 0 100px 0 !important;}
+	#service { padding-top: 0px !important;}
+	.hexagons { padding-top: 100px; padding-bottom: 0;}
+	.hexagons .title { font-size: 1.4rem; top: 10px;}
+	.hexagon-outer.left { position: static; left: 0px;}
+	.hexagon-outer.middle { position: static; top: 0px;}
+	.hexagon-outer.right { position: static; right: 0px;}
+	.hexagon { height: 230px;}
+	.hexagon .text { font-size: 1.3rem;}
+	footer { background: none; padding: 30px 0 !important;}
+	#copyright, #copyright .text-end { text-align: center !important;}
+}
+
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+	
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+ 
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
