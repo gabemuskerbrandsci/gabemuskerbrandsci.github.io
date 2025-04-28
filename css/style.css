@@ -414,6 +414,17 @@ body {
 	color: #8298ad;
 }
 
+.nav-item .nav-link-external {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	padding: 0 0 5px 0 !important;
+	color: #00000a;
+}
+
+.nav-item .nav-link-external:hover {
+	color: #8298ad;
+}
+
 /* BUTTONS */
 .btn {
 	border-radius: 0;
@@ -449,7 +460,8 @@ body {
 
 	header .links,
 	header .links a,
-	.nav-item .nav-link {
+	.nav-item .nav-link
+	.nav-link-external {
 		color: #00000a;
 	}
 
@@ -487,6 +499,11 @@ body {
 	}
 
 	.nav-item .nav-link {
+		font-size: 1.1rem;
+		color: #00000a;
+	}
+
+	.nav-item .nav-link-external {
 		font-size: 1.1rem;
 		color: #00000a;
 	}
@@ -557,7 +574,8 @@ body {
 
 	header .links,
 	header .links a,
-	.nav-item .nav-link {
+	.nav-item .nav-link
+	.nav-link-external {
 		color: #00000a;
 	}
 
@@ -648,6 +666,12 @@ body {
 		color: #00000a;
 	}
 
+	.nav-item .nav-link-external {
+		font-size: 1.1rem;
+		text-align: center;
+		color: #00000a;
+	}
+
 	#logo {
 		padding: 30px 0;
 	}
@@ -675,7 +699,8 @@ body {
 
 	header .links,
 	header .links a,
-	.nav-item .nav-link {
+	.nav-item .nav-link 
+	.nav-link-external {
 		color: #00000a;
 	}
 
