@@ -386,6 +386,11 @@ body {
 
 
 /* NAVIGATION */
+
+@view-transition {
+	navigation: auto;
+}
+
 .navbar {
 	margin: 0;
 	padding: 0;
@@ -460,8 +465,7 @@ body {
 
 	header .links,
 	header .links a,
-	.nav-item .nav-link
-	.nav-link-external {
+	.nav-item .nav-link .nav-link-external {
 		color: #00000a;
 	}
 
@@ -574,8 +578,7 @@ body {
 
 	header .links,
 	header .links a,
-	.nav-item .nav-link
-	.nav-link-external {
+	.nav-item .nav-link .nav-link-external {
 		color: #00000a;
 	}
 
@@ -699,8 +702,7 @@ body {
 
 	header .links,
 	header .links a,
-	.nav-item .nav-link 
-	.nav-link-external {
+	.nav-item .nav-link .nav-link-external {
 		color: #00000a;
 	}
 
