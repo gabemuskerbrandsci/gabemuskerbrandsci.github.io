@@ -161,6 +161,15 @@ header #intro h1 strong {
 	margin-top: 100px;
 }
 
+.box-not-outer {
+	filter: drop-shadow(0 0 8px rgba(70, 91, 116, 0.25));
+	margin-bottom: 50px;
+}
+
+.box-not-outer.top {
+	margin-top: 0px;
+}
+
 .box {
 	background: linear-gradient(-55deg, transparent 35px, #fff 0);
 	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), calc(100% - 60px) 100%, 0 100%);
