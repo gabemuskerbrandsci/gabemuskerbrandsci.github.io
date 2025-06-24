@@ -188,6 +188,11 @@ header #intro h1 strong {
 	margin-bottom: 5px;
 }
 
+.box .fa-circle-check {
+	color: #f49313;
+	margin-right: 10px;
+}
+
 .box .fa-circle-plus {
 	color: #f49313;
 	margin-right: 10px;
